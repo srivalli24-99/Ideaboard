@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+
+  frontend:
+     build: ./frontend/ideaboard
+     ports:
+      - "5173:5173"
+     depends_on:
+      - backend    

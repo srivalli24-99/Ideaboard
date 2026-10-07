@@ -1,0 +1,258 @@
+.ideas{
+    padding: 40px;
+    background: #f5f7fb;
+    min-height: calc(100vh - 65px);
+    box-sizing: border-box;
+}
+.ideas h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.ideas-table{
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.table-header, .table-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 18px 20px;
+}
+.table-header{
+    background: #4f46e5;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    min-height: 55px;
+    box-sizing: border-box;
+    letter-spacing: 0.2px;
+}
+.table-row{
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 14px;
+    min-height: 60px;
+    transition: background 0.2s ease;
+}
+.table-row:last-child{
+   border-bottom: 0;
+}
+.table-row:hover{
+    background: #f8f8ff;
+}
+.table-row span{
+    padding-right: 15px;
+}
+.create-idea-form{
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+.create-idea-form h2{
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 22px;
+}
+.create-idea-form div{
+    margin-bottom: 18px;
+}
+.create-idea-form label{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.create-idea-form input, .create-idea-form textarea{
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: 0;
+}
+.create-idea-form textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+.create-idea-form input:focus, .create-idea-form textarea:focus{
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.create-idea-form button{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 7px;
+    background: #4f46e5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.create-idea-form button:hover{
+    background: #4338ca;
+}
+.create-idea-button{
+    padding: 11px 20px;
+    margin-bottom: 25px;
+    border: 0;
+    border-radius: 7px;
+    background: #4f46e5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.create-idea-button:hover{
+    background: #4338ca;
+}
+.status-badge{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.status-submitted{
+    color: #3730a3;
+    background: #e0e7ff;
+}
+.status-under_review{
+    color: #92400e;
+    background: #fef3c7;
+}
+.status-approved{
+    color: #166534;
+    background: #dcfce7;
+}
+.status-rejected{
+    color: #991b1b;
+    background: #fee2e2;
+}
+.status-implemented{
+    color: #1e40af;
+    background: #dbeafe;
+}
+.table-row a{
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+.table-row a:hover{
+    text-decoration: underline;
+    color: #4338ca;
+}
+.ideas-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.ideas-header h1{
+    margin: 0;
+    font-size: 30px;
+}
+.search-section{
+    margin-bottom: 25px;
+}
+.search-section input{
+    width: 100%;
+    max-width: 400px;
+    padding: 11px 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: 0;
+}
+.search-section input:focus{
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.filter-section{
+    margin-bottom: 25px;
+}
+.filter-section select{
+    width: 100%;
+    max-width: 200px;
+    padding: 11px 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+    outline: 0;
+    cursor: pointer;
+}
+.filter-section select:focus{
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.sort-section{
+    margin-bottom: 25px;
+}
+.sort-section select{
+    width: 100%;
+    max-width: 200px;
+    padding: 11px 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+    outline: 0;
+    cursor: pointer;
+}
+.sort-section select:focus{
+    border-color: #4f46e5;
+    box-shadow: 0 0 3px rgba(79,70,229,0.1);
+}
+.idea-controls{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.idea-controls .search-section,
+.idea-controls .filter-section,
+.idea-controls .sort-section{
+    margin-bottom: 0;
+}
+
+
+@media(max-width:768px){
+    .ideas{
+        padding: 20px
+    }
+    .ideas-table{
+        overflow-x: auto;
+    }
+    .table-header, .table-row{
+        min-width: 650px;
+    }
+
+    .idea-controls{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .idea-controls .search-section, .idea-controls .filter-section, .idea-controls .sort-section{
+        width: 100%;
+    }
+    .idea-controls .search-section input,
+    .idea-controls .filter-section select,
+    .idea-controls .sort-section select{
+        width: 100%;
+        max-width: none;
+    }
+}
