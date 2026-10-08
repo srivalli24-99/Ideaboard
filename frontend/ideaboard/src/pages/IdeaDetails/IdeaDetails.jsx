@@ -23,7 +23,7 @@ const IdeaDetails = () => {
 
             try{
                 const response = await fetch(
-                    `http://127.0.0.1:8000/api/users/profile`,
+                    `http://3.104.123.79:8000/api/users/profile`,
                     {
                         headers: {
                             Authorization: `Bearer ${accessToken}`,
@@ -49,7 +49,7 @@ const IdeaDetails = () => {
 
         try{
             const response = await fetch(
-                `http://127.0.0.1:8000/api/ideas/${id}/edit/`,
+                `http://3.104.123.79:8000/api/ideas/${id}/edit/`,
                 {
                     method: 'PATCH',
                     headers: {
@@ -83,7 +83,7 @@ const IdeaDetails = () => {
 
         try{
             const response = await fetch(
-                `http://127.0.0.1:8000/api/ideas/${id}/review/`,
+                `http://3.104.123.79:8000/api/ideas/${id}/review/`,
                 {
                     method: 'PATCH',
                     headers: {
@@ -120,7 +120,7 @@ const IdeaDetails = () => {
 
         try{
             const response = await fetch(
-                `http://127.0.0.1:8000/api/ideas/${id}/delete/`,
+                `http://3.104.123.79:8000/api/ideas/${id}/delete/`,
                 {
                     method: 'DELETE',
                     headers: {
@@ -143,7 +143,7 @@ const IdeaDetails = () => {
 
         try{
             const response = await fetch(
-                `http://127.0.0.1:8000/api/comments/`,
+                `http://3.104.123.79:8000/api/comments/`,
                 {
                     method: 'POST',
                     headers: {
@@ -182,7 +182,7 @@ const IdeaDetails = () => {
 
             try{
                 const response = await fetch(
-                    `http://127.0.0.1:8000/api/ideas/${id}/`,
+                    `http://3.104.123.79:8000/api/ideas/${id}/`,
                     {
                         headers : {
                             Authorization : `Bearer ${accessToken}`,
@@ -211,7 +211,7 @@ const IdeaDetails = () => {
 
             try{
                 const response = await fetch(
-                    `http://127.0.0.1:8000/api/comments/idea/${id}/`,
+                    `http://3.104.123.79:8000/api/comments/idea/${id}/`,
                     {
                         headers: {
                             Authorization: `Bearer ${accessToken}`,
@@ -240,7 +240,7 @@ const IdeaDetails = () => {
 
             try{
                 const response = await fetch(
-                `http://127.0.0.1:8000/api/users/profile/`,
+                `http://3.104.123.79:8000/api/users/profile/`,
                 {
                     headers: {
                         Authorization: `Bearer ${accessToken}`,
