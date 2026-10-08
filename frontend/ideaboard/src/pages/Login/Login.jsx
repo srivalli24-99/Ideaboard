@@ -13,7 +13,7 @@ const Login = () => {
 
         try{
             const response = await fetch(
-                'http://127.0.0.1:8000/api/token/',
+                'http://3.104.123.79:8000/api/token/',
                 {
                     method : 'POST',
                     headers : {
