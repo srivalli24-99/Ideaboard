@@ -17,7 +17,7 @@ const Dashboard = () => {
       const accessToken = localStorage.getItem("access");
       try{
         const response = await fetch(
-          'http://127.0.0.1:8000/api/ideas/dashboard/',
+          'http://3.104.123.79:8000/api/ideas/dashboard/',
           {
             headers: {
               Authorization: `Bearer ${accessToken}`,
