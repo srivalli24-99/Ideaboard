@@ -1,3 +1,4 @@
+import os
 """
 Django settings for config project.
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-!851nq6_3fo5scxi-@6@yu1h81o%-qazxh7^of%@(xn)pcdben
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "3.104.123.79"]
 
 
 # Application definition
@@ -76,15 +77,15 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/5.2/ref/settings/#
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ideaboard_db',
-        'USER': 'root',
-        'PASSWORD': 'Newpassword@1234',
-        'HOST': 'host.docker.internal',
+        'USER': 'ideaboard_user',
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
         'PORT': '3306',
     }
 }
@@ -141,6 +142,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "http://3.104.123.79:5173",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
