@@ -20,7 +20,7 @@ const Ideas = () => {
 
         try{
             const response = await fetch(
-                `http://127.0.0.1:8000/api/ideas/`,
+                `http://3.104.123.79:8000/api/ideas/`,
                 {
                     method : 'POST',
                     headers : {
@@ -56,7 +56,7 @@ const Ideas = () => {
 
             try{
                 const response = await fetch(
-                    'http://127.0.0.1:8000/api/ideas/',
+                    'http://3.104.123.79:8000/api/ideas/',
                     {
                         headers : {
                             Authorization : `Bearer ${accessToken}`,
